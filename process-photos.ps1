@@ -6,4 +6,3 @@ Move-Item -Path .\*.mp4 -Destination $config.VideosFolder
 # batch rename photos to YYYY-MM-DD HH:MM:SS.jpg
 Set-Location -Path $config.PhotosFolder
 Get-ChildItem *.jpg | Rename-Item -NewName { $_.BaseName.substring(0,19) + $_.Extension }
-Get-ChildItem *.jpg | Rename-Item -NewName { $_.BaseName.substring(0,19) + $_.Extension }
