@@ -1,3 +1,4 @@
+Set-Location -Path $HOME\scripts
 $config = ([xml](Get-Content Config.xml)).root
 # move photos to "C:\Users\%UserProfile%\Pictures"
 Set-Location -Path $config.UploadFolder
